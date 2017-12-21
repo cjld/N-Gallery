@@ -636,7 +636,7 @@ var ItemScroll = (function () {
     var node = this.nodes[n-1];
 
     // 当滚动的距离太远时，为了效率，取消动画
-    if (Math.abs(this.currentNum - n) > 10) {
+    if (Math.abs(this.currentNum - n) > -1) {
       $(document).scrollTop(node.top - 50);
       return true;
     }
